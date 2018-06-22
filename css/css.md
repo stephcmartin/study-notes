@@ -107,3 +107,7 @@ Fixed — Fixed position element is positioned relative to the viewport. The
 Relative — Just setting position: relative will have no effect on it’s positioning , but if you do give it some other positioning attribute, say, top: 10px; it will shift it’s position 10 pixels down from where it would normally be.It limits the scope of absolutely positioned child elements.
 
 Static — This is the default for every single page element.It just means that the element will flow into the page as it normally would.
+
+## What is a Flexbox?
+
+The Flexbox Layout officially called CSS Flexible Box Layout Module is new layout module in CSS3 made to improve the items align, directions and order in the container even when they are with dynamic or even unknown size. The prime characteristic of the flex container is the ability to modify the width or height of its children to fill the available space in the best possible way on different screen sizes.

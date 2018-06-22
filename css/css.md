@@ -53,7 +53,8 @@ we can add within that div that contains floats a class 'after' which literally 
 }
 ```
 
-This way we've dynamically added something AFTER that clears all of the floated element
+This way we've dynamically added something AFTER that clears all of the floated element.
+
 ## Absolute positioning
 
 This is distinctly different than page elements that use absolute positioning. Absolutely positioned page elements are removed from the flow of the webpage, like when the text box in the print layout was told to ignore the page wrap. Absolutely positioned page elements will not affect the position of other elements and other elements will not affect them, whether they touch each other or not.
@@ -78,7 +79,7 @@ A child class can define abstract methods with the same or less restrictive visi
 
 ### Inline Elements
 
-Inline elements don’t start on a new line, they appear on the same line as the content and tags beside them. Some examples of inline elements are <span> , <strong>, and <img> tags.
+Inline elements don’t start on a new line, they appear on the same line as the content and tags beside them. Some examples of inline elements are ```<span> , <strong>, and <img> ``` tags.
 
 When it comes to margins and padding, browsers treat inline elements differently. You can add space to the left and right on an inline element, but you cannot add height to the top or bottom padding or margin of an inline element.
 

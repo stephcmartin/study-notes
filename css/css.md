@@ -76,6 +76,20 @@ A child class can define abstract methods with the same or less restrictive visi
 
 ## What are the differences between block, inline, and inline block display?
 
+### Inline Elements
+
+Inline elements don’t start on a new line, they appear on the same line as the content and tags beside them. Some examples of inline elements are <span> , <strong>, and <img> tags.
+
+When it comes to margins and padding, browsers treat inline elements differently. You can add space to the left and right on an inline element, but you cannot add height to the top or bottom padding or margin of an inline element.
+
+### Inline-Block
+
+Inline-block elements are similar to inline elements, except they can have padding and margins added on all four sides. You’ll have to declare display: inline-block in your CSS code.
+
+### Block Element 
+
+A block element always starts on a new line, and fills up the horizontal space left and right on the web page. You can add margins and padding on all four sides of any block element — top, right, left, and bottom.
+
 ## What is a pseudo-class?
 
 A CSS pseudo-class is a keyword added to a selector that specifies a special state of the selected element(s). For example, :hover can be used to change a button's color when the user hovers over it.

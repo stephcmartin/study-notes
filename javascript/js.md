@@ -139,3 +139,19 @@ Whenever you need a function that would get executed when a specific action is t
 Anonymous functions are just that simple, nameless functions that don't mean anything to you without the action they are bound to.
 
 In a typical situation you wouldn't call an anonymous function yourself, other code would have to execute it. Take the example of a click event handler. If you bind an anonymous function to the click event of a button, and that button submits a form, you wouldn't normally want to call the function unless the button has been clicked. This is when you would use an anonymous function instead of a named function.
+
+##  Difference between: function Person(){}, var person = Person(), and var person = new Person()?
+
+There are different ways (not to be exact) we can use functions in JavaScript, but with the given code below highlights important differences on how functions work.
+
+```function Person() {}```
+### Function Declaration
+Code above declares a function statement (statements perform an action) but does not execute, however, it does get registered into the global namespace.
+
+```var person = Person()```
+$$$ Function Expression
+A variable ‘var person’ has been defined and contains a value reference to a Person function. Any JavaScript Expressions (including Function Expressions) always returns a value. This may also be an Anonymous function if no name has been assign to a function but wrapped in parenthesis to be interpreted as an expression.
+
+```var person = new Person()```
+### Function Constructor
+By adding the keyword ‘new’. We are instantiating a new object of the Person class constructor. A function declaration is just a regular function unless it has been instantiated, it then becomes a class constructor.

@@ -31,3 +31,111 @@ JavaScript `sort` does lexical sorting , so it’s converting the numbers to str
  return (a — b);
 });
 ```
+
+## What's the difference between a variable that is: null, undefined or undeclared?
+
+A variable is undeclared when it does not use the var keyword. It gets created on the global object (that is, the window), thus it operates in a different space as the declared variables.
+
+### undefined
+
+Something is undefined when it hasn’t been defined yet. If you call a variable or function without having actually created it yet the parser will give you an not defined error.
+
+Example:
+```
+1
+2
+3
+4
+5
+var undefinedVariable; // undefined
+typeof undefinedVariable; // "undefined"
+
+undefinedFunction(); // undefined
+typeof undefinedFunction; // "undefined"
+```
+Note that the typeof returns "undefined", therefore undefined is a primitive type.
+
+The fix for an undefined variable or function is easy, simply define it:
+```
+1
+2
+3
+4
+5
+6
+7
+var definedVariable = 'test';
+typeof definedVariable; // "string"
+
+function definedFunction(){
+  return "I'm defined!"
+}
+typeof definedFunction // "function"
+```
+You can know if a variable is undefined with the following:
+```
+1
+2
+3
+4
+5
+if (typeof(variable) !== "undefined") {
+  console.log('variable is not undefined');
+} else {
+  console.log('variable is undefined');
+}
+
+```
+Finally we'll finish up with null.
+
+null is a variable that is defined to have a null value.
+```
+1
+2
+var nullVariable = null; // null
+typeof nullVariable // "object"
+```
+You probably don’t often purposefully define a variable to null, but it may be the return value of a function. Often you'll need to gaurd against null values in your code.
+
+You can know if a variable is null with the following:
+```
+1
+2
+3
+4
+5
+if( variable === null ) {
+  console.log('variable is null');
+} else {
+  console.log('variable is not null');
+}
+```
+
+I think the order “undeclared, undefined, and null” makes sense since it’s increasing order of certainty.
+
+undeclared variables don’t even exist
+undefined variables exist, but don’t have anything assigned to them
+null variables exist and have null assigned to them
+
+## Can you describe the main difference between a forEach loop and a .map() loop and why you would pick one versus the other?
+
+*map* : map transforms each item in the array and returns a new array of transformed items with same size as that of old array.
+
+e.g. Say you have an array of integers and want to construct an array that contains the square value of the items. You will use map in this case.
+```
+var squared = [1,2,3,4].map(function(num){
+  return Math.pow(num,2);
+});
+
+console.log(squared); // 1,4, 9, 16
+```
+
+*forEach*h : If you just want to iterate over the items in an array and do something with the items you need to use forEach . A
+
+## What's a typical use case for anonymous functions?
+
+Whenever you need a function that would get executed when a specific action is triggered.
+
+Anonymous functions are just that simple, nameless functions that don't mean anything to you without the action they are bound to.
+
+In a typical situation you wouldn't call an anonymous function yourself, other code would have to execute it. Take the example of a click event handler. If you bind an anonymous function to the click event of a button, and that button submits a form, you wouldn't normally want to call the function unless the button has been clicked. This is when you would use an anonymous function instead of a named function.

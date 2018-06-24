@@ -155,3 +155,17 @@ A variable ‘var person’ has been defined and contains a value reference to a
 ```var person = new Person()```
 ### Function Constructor
 By adding the keyword ‘new’. We are instantiating a new object of the Person class constructor. A function declaration is just a regular function unless it has been instantiated, it then becomes a class constructor.
+
+## What is AJAX?
+
+AJAX = Asynchronous JavaScript And XML.
+AJAX allows web pages to be updated asynchronously by exchanging data with a web server behind the scenes. This means that it is possible to update parts of a web page, without reloading the whole page.
+
+It can:
+- Update a web page without reloading the page
+
+- Request data from a server - after the page has loaded
+
+- Receive data from a server - after the page has loaded
+
+- Send data to a server - in the background

@@ -169,3 +169,16 @@ It can:
 - Receive data from a server - after the page has loaded
 
 - Send data to a server - in the background
+
+## What is the difference between classical inheritance and prototypal inheritance?
+#### Class Inheritance: 
+
+instances inherit from classes (like a blueprint — a description of the class), and create sub-class relationships: hierarchical class taxonomies. Instances are typically instantiated via constructor functions with the `new` keyword. Class inheritance may or may not use the `class` keyword from ES6.
+
+#### Prototypal Inheritance: 
+instances inherit directly from other objects. Instances are typically instantiated via factory functions or `Object.create()`. Instances may be composed from many different objects, allowing for easy selective inheritance.
+
+## What does “favor object composition over class inheritance” mean?
+This is a quote from “Design Patterns: Elements of Reusable Object-Oriented Software”. It means that code reuse should be achieved by assembling smaller units of functionality into new objects instead of inheriting from classes and creating object taxonomies.
+
+In other words, use can-do, has-a, or uses-a relationships instead of is-a relationships.

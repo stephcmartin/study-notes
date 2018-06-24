@@ -128,3 +128,23 @@ Static — This is the default for every single page element.It just means t
 The Flexbox Layout officially called CSS Flexible Box Layout Module is new layout module in CSS3 made to improve the items align, directions and order in the container even when they are with dynamic or even unknown size. 
 
 The prime characteristic of the flex container is the ability to modify the width or height of its children to fill the available space in the best possible way on different screen sizes.
+
+## What's the difference between "resetting" and "normalizing"
+
+- CSS resets aim to remove all built-in browser styling. Standard elements like h1 - h6, p, strong, em end up looking exactly alike, having no decoration at all. You're then supposed to add all decoration yourself.
+
+- Normalize.css aims to make built-in browser styling consistent across browsers. Elements like h1 - h6 will appear bold, larger et cetera in a consistent way across browsers. You're then supposed to add only the difference in decoration your design needs.
+
+## Describe z-index and how stacking context is formed.
+
+The z-index property specifies the stack order of an element.
+
+An element with greater stack order is always in front of an element with a lower stack order.
+
+## What are CSS Sprites?
+
+CSS Sprites are a means of combining multiple images into a single image file for use on a website, to help with performance.
+
+The term "sprites" comes from a technique in computer graphics, most often used in video games. The idea was that the computer could fetch a graphic into memory, and then only display parts of that image at a time, which was faster than having to continually fetch new images. The sprite was the big combined graphic.
+
+CSS Sprites is pretty much the exact same theory: get the image once, and shift it around and only display parts of it. This reduces the overhead of having to fetch multiple images.

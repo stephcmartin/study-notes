@@ -16,7 +16,7 @@ Redux provides us with a Store which holds our state, and a Dispatch for trigger
 - Middleware should be responsible for any interactions that affect global state (like setInterval()) or any asynchronous operations (like HTTP requests).
 - redux middleware is redux-thunk which allows you to write action creators that return a function instead of an action.
 
-<img src="https://cdn-images-1.medium.com/max/800/1*BqYWetCfpVNYhDX9fez0Mg.png">
+<img src="https://cdn-images-1.medium.com/max/1600/1*HdW9EAF92r__hgFINFGYSw.png">
 
 ### Any asynchronous behavior or global state modifications should go through middleware, so your reducers can be pure functions. 
 

@@ -19,3 +19,15 @@ Redux provides us with a Store which holds our state, and a Dispatch for trigger
 <img src="https://cdn-images-1.medium.com/max/800/1*BqYWetCfpVNYhDX9fez0Mg.png">
 
 ### Any asynchronous behavior or global state modifications should go through middleware, so your reducers can be pure functions. 
+
+```
+const customMiddleware = store => next => action => {
+  ...
+}
+```
+
+#### The Store: That’s our redux store.
+
+#### The Next: We call this function when our middleware is done with the task assigned to do. This sends our actions to our reducer or another middleware.
+
+#### The Action: Thats our action currently being dispatched.

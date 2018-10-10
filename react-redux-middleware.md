@@ -9,7 +9,7 @@ The container is the glue that connects react to redux. It connects it in a lot 
 
 - Action: This is an object that contains the type of action and the state that was changed because of the action.
 
--Action Creator: This is the code that is called to create an action and send it along to the reducer.
+- Action Creator: This is the code that is called to create an action and send it along to the reducer.
 
 ## Reducers
 

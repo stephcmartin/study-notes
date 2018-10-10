@@ -46,3 +46,7 @@ const customMiddleware = store => next => action => {
 #### The Action: Thats our action currently being dispatched.
 
 Greate resource + read : <a href="https://medium.com/netscape/creating-custom-middleware-in-react-redux-961570459ecb">https://medium.com/netscape/creating-custom-middleware-in-react-redux-961570459ecb</a>
+
+# Building React App Architecture 
+
+https://itnext.io/building-react-app-part-2-architecture-boilerplate-683b992089a6

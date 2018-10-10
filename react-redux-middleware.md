@@ -31,3 +31,5 @@ const customMiddleware = store => next => action => {
 #### The Next: We call this function when our middleware is done with the task assigned to do. This sends our actions to our reducer or another middleware.
 
 #### The Action: Thats our action currently being dispatched.
+
+Greate resource + read : <a href="https://medium.com/netscape/creating-custom-middleware-in-react-redux-961570459ecb">https://medium.com/netscape/creating-custom-middleware-in-react-redux-961570459ecb</a>
